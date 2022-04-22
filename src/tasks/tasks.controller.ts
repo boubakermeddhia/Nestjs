@@ -12,7 +12,7 @@ import { User } from 'src/auth/user.entity';
 @Controller('tasks')
 @UseGuards(AuthGuard())
 export class TasksController {
-    constructor(private tasksService: TasksService) { }
+    constructor(private tasksService: TasksService) {  }
 
     @Get()
     getTasks(
